@@ -60,7 +60,6 @@ deactivate
 ### PyTorch and EasyOCR Installation (CPU Only)
 
 ```bash
-pip uninstall torch torchvision -y
 pip install torch --index-url https://download.pytorch.org/whl/cpu
 pip install torchvision --index-url https://download.pytorch.org/whl/cpu
 pip install easyocr
