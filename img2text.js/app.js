@@ -21,6 +21,10 @@ const imageFiles = files.filter((file) =>
   /\.(png|jpe?g|bmp|webp|tiff?)$/i.test(file),
 );
 
+// Sort filenames using numeric-aware collation so names like 1-2 come before 1-10
+const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: "base" });
+imageFiles.sort(collator.compare);
+
 (async () => {
   for (const file of imageFiles) {
     const filePath = path.join(imagesFolder, file);

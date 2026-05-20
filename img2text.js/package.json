@@ -4,7 +4,7 @@
   "description": "A simple image to text converter using Tesseract.js",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "author": "Kamran Hossain Topu",
   "dependencies": {
